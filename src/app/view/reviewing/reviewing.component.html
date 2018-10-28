@@ -1,0 +1,80 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<div class="container-fluid">
+  <div class="row row1">
+    <div class="col-12 heading">Reviewing Images</div>
+  </div>
+  <div class="row row2" >
+    <div class="col-md-8 offset-md-2 d-flex" >
+      <div class="card flex-fill" >
+        <img class="card-img-top img-fluid img1" src="https://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.id}}_{{image.secret}}.jpg" alt="Card image cap" >
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item title">{{image.title}}</li>
+          </ul>
+          <form>
+            <div class="form-group">
+                <label for="exampleRadios1">
+                    Rate this image
+                  </label><br>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" [(ngModel)]="star" [value]="1" (change)="onItemChange(1)">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" [(ngModel)]="star" [value]="2" (change)="onItemChange(2)">
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" [(ngModel)]="star" [value]="3" (change)="onItemChange(3)">
+                        <label class="form-check-label" for="inlineRadio3">3</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" [(ngModel)]="star" [value]="4" (change)="onItemChange(4)">
+                        <label class="form-check-label" for="inlineRadio4">4</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" [(ngModel)]="star" [value]="5" (change)="onItemChange(5)">
+                          <label class="form-check-label" for="inlineRadio5">5</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" [(ngModel)]="star" [value]="6" (change)="onItemChange(6)">
+                          <label class="form-check-label" for="inlineRadio6">6</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" [(ngModel)]="star"  [value]="7" (change)="onItemChange(7)">
+                            <label class="form-check-label" for="inlineRadio7">7</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8"  [(ngModel)]="star" [value]="8" (change)="onItemChange(8)">
+                            <label class="form-check-label" for="inlineRadio8">8</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" [(ngModel)]="star" [value]="9" (change)="onItemChange(9)">
+                              <label class="form-check-label" for="inlineRadio9">9</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" [(ngModel)]="star" [value]="10" (change)="onItemChange(10)">
+                                <label class="form-check-label" for="inlineRadio10">10</label>
+                              </div>
+                             
+                           
+            </div>
+           
+             
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Name" [(ngModel)]="name">
+            
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Reason</label>
+              <input type="text" class="form-control" name="reason" placeholder="reason" [(ngModel)]="reason">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" (click)="submitReview()">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

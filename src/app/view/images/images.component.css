@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Arvo");
+
+.heading{
+   
+    font-family: 'Arvo', serif;
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+}
+.row1{
+    
+    background-color: #20a8d8;
+}
+.img1:hover{
+ cursor: pointer;
+}
+.star{
+    color: #FFBF00;
+}
+.container-fluid{
+    background-color: rgba(0, 0, 0, 0.212);
+}
+@media only screen and (min-width:350px)  and (max-width:460px){
+    .heading{
+    font-size: 34px;
+    }
+}
+
+@media only screen  and (max-width:350px){
+    .heading{
+    font-size: 28px;
+    }
+}

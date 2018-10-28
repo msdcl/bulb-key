@@ -1,0 +1,33 @@
+.heading{
+   
+    font-family: 'Arvo', serif;
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+}
+.row1{
+    
+    background-color: #20a8d8;
+}
+.row2{
+    background-color: rgba(0, 0, 0, 0.212);
+    height: auto;
+}
+.title{
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+}
+.card-body{
+    height: auto;
+}
+@media only screen and (min-width:350px)  and (max-width:460px){
+    .heading{
+    font-size: 34px;
+    }
+}
+
+@media only screen  and (max-width:350px){
+    .heading{
+    font-size: 28px;
+    }
+}

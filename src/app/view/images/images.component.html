@@ -1,0 +1,16 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<div class="container-fluid">
+  <div class="row row1">
+    <div class="col-12 heading">Reviewing Images</div>
+  </div>
+  <div class="row" >
+    <div class="col-md-4 d-flex image" *ngFor = "let image of allImages">
+      <div class="card flex-fill" >
+        <img class="card-img-top img-fluid img1" src="https://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.id}}_{{image.secret}}.jpg" alt="Card image cap" (click)="viewDetails(image)">
+        <div class="card-body" *ngIf = "image.isReviewed">
+          <div class="star1">{{image.rating}}<i class="fa fa-star star"></i></div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
